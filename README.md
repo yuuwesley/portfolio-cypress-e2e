@@ -65,6 +65,7 @@ Projeto de automação de testes End-to-End (E2E) desenvolvido para validar flux
 ## 👨‍💻 Autor
 
 **Wesley Dias**
+
 QA Analyst | Software Quality Assurance
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/wesley-dias)
