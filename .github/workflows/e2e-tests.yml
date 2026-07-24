@@ -1,0 +1,40 @@
+name: Pipeline E2E Cypress - SauceDemo
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do Código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Instalar Dependências
+        run: npm ci
+
+      - name: Executar Testes E2E Cypress
+        uses: cypress-io/github-action@v6
+        with:
+          command: npm test
+
+      - name: Publicar Relatório Mochawesome (Artefatos)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: relatorio-testes-html
+          path: cypress/reports/
+          retention-days: 14
