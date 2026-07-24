@@ -38,7 +38,34 @@ Projeto de automação de testes End-to-End (E2E) desenvolvido para validar flux
 ## 🚀 Como Executar o Projeto Localmente
 
 1. **Clone este repositório:**
-   ```bash
+```bash
    git clone https://github.com/yuuwesley/portfolio-cypress-e2e.git
    cd portfolio-cypress-e2e
-   ```
+```
+
+2. **Instale as dependências:**
+```bash
+   npm install
+```
+
+3. **Execute os testes em modo interativo (Interface Cypress):**
+```bash
+   npm run cypress:open
+```
+
+4. **Execute os testes em modo Headless (Gera Relatório HTML):**
+```bash
+   npm test
+```
+
+> 📊 O relatório HTML será gerado automaticamente em cypress/reports/index.html.
+
+---
+
+## 👨‍💻 Autor
+
+**Wesley Dias**
+QA Analyst | Software Quality Assurance
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/wesley-dias)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yuuwesley)
